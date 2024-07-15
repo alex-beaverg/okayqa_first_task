@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Demo QA dot com" verbose="1" parallel="tests" thread-count="1">
+    <test name="Book Store API" parallel="methods" thread-count="1">
+        <classes>
+            <class name="qa.okay.tests.api.BookStoreApiTest"/>
+        </classes>
+    </test>
+</suite>

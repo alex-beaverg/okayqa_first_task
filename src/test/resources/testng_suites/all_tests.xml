@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Demo QA dot com" verbose="1" parallel="tests" thread-count="1">
+    <test name="Alerts, Frames &amp; Windows" parallel="methods" thread-count="1">
+        <classes>
+            <class name="qa.okay.tests.web.alerts_frames_windows.AlertsTest"/>
+            <class name="qa.okay.tests.web.alerts_frames_windows.FramesTest"/>
+        </classes>
+    </test>
+    <test name="Forms" parallel="methods" thread-count="1">
+        <classes>
+            <class name="qa.okay.tests.web.forms.PracticeFormTest"/>
+        </classes>
+    </test>
+    <test name="Interactions" parallel="methods" thread-count="1">
+        <classes>
+            <class name="qa.okay.tests.web.interactions.DroppableTest"/>
+        </classes>
+    </test>
+    <test name="Widgets" parallel="methods" thread-count="1">
+        <classes>
+            <class name="qa.okay.tests.web.widgets.SliderTest"/>
+            <class name="qa.okay.tests.web.widgets.ProgressBarTest"/>
+        </classes>
+    </test>
+    <test name="Book Store API" parallel="methods" thread-count="1">
+        <classes>
+            <class name="qa.okay.tests.api.BookStoreApiTest"/>
+        </classes>
+    </test>
+</suite>
